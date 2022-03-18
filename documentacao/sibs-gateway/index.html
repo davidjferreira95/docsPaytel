@@ -1,0 +1,2598 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="img/iconSIBS.svg">
+  <title>
+    SPG Documentation
+  </title>
+  <!-- Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <!--     Fonts and icons     -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet'>
+   <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />  -->
+  <!-- Nucleo Icons -->
+  <link href="css/nucleo-icons.css" rel="stylesheet" />
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="css/soft-design-system.css?v=1.0.5" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+
+  <!-- Header / Navbar Transparent --> 
+  <nav class="d-flex nav navbar navbar-expand-sm navbar-dark bg-white top-0 z-index-3 w-100 h-50px position-fixed" >
+    <div>
+      <a class="navbar-brand  text-white ps-5" href="https://www.pay.sibs.com" rel="tooltip" title="SPG_DOC" data-placement="bottom">
+        <img src="img/logoSIBS.svg" alt="SIBS Pay" title="" width="140" height="40" class="site-logo-image" data-tf-not-load="1" importance="high">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse " id="navigation">
+    </div>
+    
+    <div class="navbar-toggler ms-auto float-md-end">
+      <span href="javascript:;" class="nav-link text-body bg-gray-100 p-0" id="iconNavbarSidenav">
+        <div class="sidenav-toggler-inner">
+          <i class="sidenav-toggler-line"></i>
+          <i class="sidenav-toggler-line"></i>
+          <i class="sidenav-toggler-line"></i>
+        </div>
+      </a>
+    </div>
+  </nav>
+  <!-- End Header / Navbar -->
+
+  <!--<div class="g-sidenav-show bg-gray-100 mt-5 w-100">-->
+    
+  <!-- SideBar -->  
+
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 bg-gray-100 border-radius-xl mt-6 mb-2 fixed-start ms-3 " id="sidenav-main">
+    <i class="fas fa-times px-3 py-2 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <div class="sidenav-header h-auto">
+      
+    </div>
+
+    <hr class="horizontal dark mt-0">
+
+    <div class="collapse navbar-collapse w-auto h-auto mb-3 " id="sidenav-collapse-main">
+      <ul class="navbar-nav text-dark ">
+
+        <!-- SIBS Payment Gateway Sidebar-->
+        <li class="nav-item pt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6 ">SIBS Payment Gateway</h6>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="getStarted" href="#getStarted" id="defaultActive">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>shop </title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(1716.000000, 291.000000)">
+                      <g transform="translate(0.000000, 148.000000)">
+                        <path class="color-background opacity-6" d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z"></path>
+                        <path class="color-background" d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Getting Started</span>
+          </a>
+        </li>
+
+        <!-- Form Integration Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="#formIntegration" href="#formIntegration">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-credit-card" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_1">Form Integration</span>
+          </a>
+        </li>
+        <!-- Create Checkout Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#createCheckoutForm">
+            <span class="nav-link-text" id="header_btn_1_option_1">Create checkout</span>
+          </a>
+        </li>
+        <!-- Build Form Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#buildForm">
+            <span class="nav-link-text" id="header_btn_1_option_1">Build Form</span>
+          </a>
+        </li>
+        <!-- Get Status Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#getStatusForm">
+            <span class="nav-link-text" id="header_btn_1_option_1">Get payment Status</span>
+          </a>
+        </li>
+        <!-- END Form Integration Sidebar-->
+
+        <!-- Server-to-Server Integration Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#servertoserver">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-credit-card" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_2">Server-to-Server</span>
+          </a>
+        </li>
+        <!-- Create Checkout Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#createCheckoutSTS">
+            <span class="nav-link-text" id="header_btn_2_option_1">Create checkout</span>
+          </a>
+        </li>
+        <!-- Create Checkout Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#generatePayment">
+            <span class="nav-link-text" id="header_btn_2_option_1">Generate Transaction</span>
+          </a>
+        </li>
+        <!-- Create Checkout Sidebar-->
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#getStatusSTS">
+            <span class="nav-link-text" id="header_btn_2_option_1">Get payment Status</span>
+          </a>
+        </li>
+        <!-- END Server-to-Server Integration Sidebar-->
+
+
+        <!-- BackOffice Operations Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#backoffice">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-settings" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_2">BackOffice Operations</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#capture">
+            <span class="nav-link-text" id="header_btn_2_option_1">Capture</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#cancelation">
+            <span class="nav-link-text" id="header_btn_2_option_1">Cancelation</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#refund">
+            <span class="nav-link-text" id="header_btn_2_option_1">Refund</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#recurring">
+            <span class="nav-link-text" id="header_btn_2_option_1">Recurring</span>
+          </a>
+        </li>
+        <!-- END BackOffice Operations Sidebar-->
+        
+        <!-- Webhooks Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#webhook">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-send" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_2">Webhook</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#decrypt">
+            <span class="nav-link-text" id="header_btn_2_option_1">Decrypt</span>
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark ms-5" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#examples">
+            <span class="nav-link-text" id="header_btn_2_option_1">Examples</span>
+          </a>
+        </li>
+        <!-- END Webhooks Sidebar-->
+
+        <!-- API Reference Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#apiReference">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-books" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_2">API Reference</span>
+          </a>
+        </li>
+        <!-- END API Reference Sidebar-->
+
+        <!-- Credentials Sidebar-->
+        <li class="nav-item">
+          <a class="nav-link text-dark" onclick="changeActivePoint(this.parentElement.parentElement, this)" data-scroll="" href="#credentials">
+            <i class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center ni ni-settings-gear-65" style="font-size: 1em !important;"></i>
+            <span class="nav-link-text" id="header_btn_1_option_2">Credentials</span>
+          </a>
+        </li>
+        <!-- END Configurations Sidebar-->
+        <!-- END SIBS Payment Gateway Sidebar-->
+
+      </ul>
+    </div>
+
+    <hr class="horizontal dark mt-0">
+
+    <div class="sidenav-footer mx-3 my-4">   
+    </div>
+  </aside>
+
+
+  
+  <!-- END SideBar -->
+
+  <!-- Main DOCs -->  
+  <main class="main-content position-relative max-height-vh-100 mt-5 mb-2 h-100 border-radius-lg" id="main" style="max-height : 93vh !important">
+
+    <div class="container-fluid">
+
+    <!--DOCUMENTATION SPG GETTING STARTED-->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="getStarted">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h3 class="text-white">SIBS PAYMENT GATEWAY - Getting Started</h3>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row align-items-evenly justify-content-evenly">  
+                    <div  class="card col-md-5 mx-3 my-3 ">
+                      <a class="card-header info align-items-center justify-content-center" href="#formIntegration" >
+                          <div class="icon icon-shape">
+                            <svg class="text-info" width="25px" height="25px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <title>spaceship</title>
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                  <g transform="translate(1716.000000, 291.000000)">
+                                    <g transform="translate(4.000000, 301.000000)">
+                                      <path class="color-foreground" d="M39.3,0.706666667 C38.9660984,0.370464027 38.5048767,0.192278529 38.0316667,0.216666667 C14.6516667,1.43666667 6.015,22.2633333 5.93166667,22.4733333 C5.68236407,23.0926189 5.82664679,23.8009159 6.29833333,24.2733333 L15.7266667,33.7016667 C16.2013871,34.1756798 16.9140329,34.3188658 17.535,34.065 C17.7433333,33.98 38.4583333,25.2466667 39.7816667,1.97666667 C39.8087196,1.50414529 39.6335979,1.04240574 39.3,0.706666667 Z M25.69,19.0233333 C24.7367525,19.9768687 23.3029475,20.2622391 22.0572426,19.7463614 C20.8115377,19.2304837 19.9992882,18.0149658 19.9992882,16.6666667 C19.9992882,15.3183676 20.8115377,14.1028496 22.0572426,13.5869719 C23.3029475,13.0710943 24.7367525,13.3564646 25.69,14.31 C26.9912731,15.6116662 26.9912731,17.7216672 25.69,19.0233333 L25.69,19.0233333 Z"></path>
+                                      <path class="color-foreground" d="M1.855,31.4066667 C3.05106558,30.2024182 4.79973884,29.7296005 6.43969145,30.1670277 C8.07964407,30.6044549 9.36054508,31.8853559 9.7979723,33.5253085 C10.2353995,35.1652612 9.76258177,36.9139344 8.55833333,38.11 C6.70666667,39.9616667 0,40 0,40 C0,40 0,33.2566667 1.855,31.4066667 Z"></path>
+                                      <path class="color-background" d="M17.2616667,3.90166667 C12.4943643,3.07192755 7.62174065,4.61673894 4.20333333,8.04166667 C3.31200265,8.94126033 2.53706177,9.94913142 1.89666667,11.0416667 C1.5109569,11.6966059 1.61721591,12.5295394 2.155,13.0666667 L5.47,16.3833333 C8.55036617,11.4946947 12.5559074,7.25476565 17.2616667,3.90166667 L17.2616667,3.90166667 Z" opacity="0.598539807"></path>
+                                      <path class="color-background" d="M36.0983333,22.7383333 C36.9280725,27.5056357 35.3832611,32.3782594 31.9583333,35.7966667 C31.0587397,36.6879974 30.0508686,37.4629382 28.9583333,38.1033333 C28.3033941,38.4890431 27.4704606,38.3827841 26.9333333,37.845 L23.6166667,34.53 C28.5053053,31.4496338 32.7452344,27.4440926 36.0983333,22.7383333 L36.0983333,22.7383333 Z" id="color-3" opacity="0.598539807"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                            
+                          </div>
+                          <span class="h4" id="card-short-title-1">Form Integration</span>
+                      </a>
+
+                      <div class="card-body">
+                        <p id="card-short-des-1">Form Integration is based on three simple steps:</p>
+                        <!-- TODO FIX for JSON-->
+                        <p class="offset-1 text-info"><i class="ni ni-fat-delete"></i>Prepare the checkout</p>
+                        <!-- TODO FIX for JSON-->
+                        <p class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Create the payment form</p>
+                        <!-- TODO FIX for JSON-->
+                        <p class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Get the payment status</p>
+                      </div>
+                    
+                    </div>
+                    <div class="card col-md-5 mx-3 my-3 align-items-evenly justify-content-evenly">
+                      <a class="card-header info" href="#servertoserver">
+                        <div class="icon icon-shape text-center">
+                          <svg class="text-info" width="43px" height="20px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>credit-card</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <g transform="translate(1716.000000, 291.000000)">
+                                  <g id="credit-card" transform="translate(453.000000, 454.000000)">
+                                    <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" opacity="0.593633743">
+                                    </path>
+                                    <path class="color-foreground" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="h4" id="card-short-title-2">Server-to-Server Integration</span>
+                      </a>
+                        <div class="card-body">
+                        <p id="card-short-des-2">Server-to-Server Integration is based on the following steps:</p>
+                        <!-- TODO FIX for JSON-->
+                        <p  class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Prepare the checkout </p>
+                        <!-- TODO FIX for JSON-->
+                        <p  class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Display payment method option to customer</p>
+                        <!-- TODO FIX for JSON-->
+                        <p  class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Create the transaction</p>
+                        <!-- TODO FIX for JSON-->
+                        <p  class="offset-1 text-info"><i class="ni ni-fat-delete"></i> Get the payment status</p>
+                      </div>
+                    </div>
+              </div>
+              
+              <div class="row align-items-evenly justify-content-evenly">
+                    <div class="card col-md-5 mx-3 my-3 align-items-evenly justify-content-evenly">
+                      <a class="card-header info" href="#backoffice">
+                        <div class="icon icon-shape text-center">
+                          <svg class="text-info" width="25px" height="25px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>box-3d-50</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-2319.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <g transform="translate(1716.000000, 291.000000)">
+                                  <g id="box-3d-50" transform="translate(603.000000, 0.000000)">
+                                    <path class="color-foreground" d="M22.7597136,19.3090182 L38.8987031,11.2395234 C39.3926816,10.9925342 39.592906,10.3918611 39.3459167,9.89788265 C39.249157,9.70436312 39.0922432,9.5474453 38.8987261,9.45068056 L20.2741875,0.1378125 L20.2741875,0.1378125 C19.905375,-0.04725 19.469625,-0.04725 19.0995,0.1378125 L3.1011696,8.13815822 C2.60720568,8.38517662 2.40701679,8.98586148 2.6540352,9.4798254 C2.75080129,9.67332903 2.90771305,9.83023153 3.10122239,9.9269862 L21.8652864,19.3090182 C22.1468139,19.4497819 22.4781861,19.4497819 22.7597136,19.3090182 Z"></path>
+                                    <path class="color-background" d="M23.625,22.429159 L23.625,39.8805372 C23.625,40.4328219 24.0727153,40.8805372 24.625,40.8805372 C24.7802551,40.8805372 24.9333778,40.8443874 25.0722402,40.7749511 L41.2741875,32.673375 L41.2741875,32.673375 C41.719125,32.4515625 42,31.9974375 42,31.5 L42,14.241659 C42,13.6893742 41.5522847,13.241659 41,13.241659 C40.8447549,13.241659 40.6916418,13.2778041 40.5527864,13.3472318 L24.1777864,21.5347318 C23.8390024,21.7041238 23.625,22.0503869 23.625,22.429159 Z" opacity="0.7"></path>
+                                    <path class="color-background" d="M20.4472136,21.5347318 L1.4472136,12.0347318 C0.953235098,11.7877425 0.352562058,11.9879669 0.105572809,12.4819454 C0.0361450918,12.6208008 6.47121774e-16,12.7739139 0,12.929159 L0,30.1875 L0,30.1875 C0,30.6849375 0.280875,31.1390625 0.7258125,31.3621875 L19.5528096,40.7750766 C20.0467945,41.0220531 20.6474623,40.8218132 20.8944388,40.3278283 C20.963859,40.1889789 21,40.0358742 21,39.8806379 L21,22.429159 C21,22.0503869 20.7859976,21.7041238 20.4472136,21.5347318 Z" opacity="0.7"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="h4" id="card-short-title-3" >BackOffice APIs</span>
+                      </a>
+                      <div class="card-body">
+                        <p id="card-short-des-3" >There are also provided BackOffice APIs to perform a:</p>
+                         <!-- TODO FIX for JSON-->
+                        <a href="#capture"><p class="offset-1 text-info"><i class="ni ni-fat-add"></i> Capture</p> </a>
+                        <!-- TODO FIX for JSON-->
+                        <a href="#cancelation"><p class="offset-1 text-info"><i class="ni ni-fat-add"></i> Cancellation</p> </a>
+                         <!-- TODO FIX for JSON-->
+                        <a href="#refund"><p class="offset-1 text-info"><i class="ni ni-fat-add"></i> Refund</p> </a>
+                         <!-- TODO FIX for JSON-->
+                        <a href="#recurring"><p class="offset-1 text-info"><i class="ni ni-fat-add"></i> Recurring</p> </a>
+                      </div>
+                    </div>
+                    <div class="card col-md-5 mx-3 my-3 align-items-evenly justify-content-evenly">
+                      <a class="card-header info" href="#webhook">
+                        <div class="icon icon-shape text-center">
+                          <svg class="text-info" width="25px" height="25px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>customer-support</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <g transform="translate(1716.000000, 291.000000)">
+                                  <g transform="translate(1.000000, 0.000000)">
+                                    <path class="color-background" d="M45,0 L26,0 C25.447,0 25,0.447 25,1 L25,20 C25,20.379 25.214,20.725 25.553,20.895 C25.694,20.965 25.848,21 26,21 C26.212,21 26.424,20.933 26.6,20.8 L34.333,15 L45,15 C45.553,15 46,14.553 46,14 L46,1 C46,0.447 45.553,0 45,0 Z" opacity="0.59858631"></path>
+                                    <path class="color-foreground" d="M22.883,32.86 C20.761,32.012 17.324,31 13,31 C8.676,31 5.239,32.012 3.116,32.86 C1.224,33.619 0,35.438 0,37.494 L0,41 C0,41.553 0.447,42 1,42 L25,42 C25.553,42 26,41.553 26,41 L26,37.494 C26,35.438 24.776,33.619 22.883,32.86 Z"></path>
+                                    <path class="color-foreground" d="M13,28 C17.432,28 21,22.529 21,18 C21,13.589 17.411,10 13,10 C8.589,10 5,13.589 5,18 C5,22.529 8.568,28 13,28 Z"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="h4" id="card-short-title-4">Webhooks</span>
+                      </a>
+                      <div class="card-body">
+                        <p id="card-short-des-4">Webhooks are HTTP callbacks that notify you of all events you subscribed for on an entity.</p>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- DOCUMENTATION FORM INTEGRATION -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="formIntegration">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">Form Integration</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+            <br>
+            <p>The <b>Form integration</b> solution enables merchants to integrate either to the SIBS Gateway thru a secure Form avoiding a PCI-DSS Certification.</p>
+
+            <p>This the quickest and simplest way to integrate allowing merchants to use 3 different payment methods (MB WAY, Credit Cards and MB Reference) using a single Form.</p>
+
+            <p>Besides this, Form integration offers three types of layouts to suit better the merchant needs.</p>
+
+            <p> <b>Form Integration</b> is based on three simple steps:</p>
+              <li class="ms-3"><b>Prepare the checkout:</b> sends payment data, including payment method data.</li>
+              <li class="ms-3"><b>Create the payment form:</b> displays a Payment Form to allow customers submit payment method data.</li>
+              <li class="ms-3"><b>Get the payment status:</b> gets the payment status.</li> 
+            <br>
+            <hr class="horizontal dark mt-0"  id="createCheckoutForm">
+
+            <div id="createCheckoutForm">
+              <h3 class="mt-5 mb-3 ">Prepare the Checkout</h3>
+              <p>First, perform a server-to-server POST request to prepare the checkout with the required data,where you should include the payment type, amount, currency and payment methods allowed.</p>
+              
+              <!-- Acordion Body composition-->
+              <div class="accordion-1">
+                <div class="row">
+                    <p>The JSON of your POST body, can be composed of various <span class="text-info">Complex Types:</span> </p>
+                </div>
+                <div class="row">
+                  <div class="accordion" id="accordionRental">
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingOne">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Merchant (mandatory)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p>"merchant": {
+                            <p class="mt-0 mb-0 offset-1">"terminalId": {{terminalId}}, </p>
+                            <p class="mt-0 mb-0 offset-1">"channel": "web", </p>
+                            <p class="mt-0 mb-0 offset-1"> "merchantTransactionId": "gp9253eg4o" </p>
+                            <p>}</code>
+                            <br>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Transaction (mandatory)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code class="string_to_json mt-0 mb-0">
+                            <p class="mt-0 mb-0">"transaction": { </p>
+                            <p class="mt-0 mb-0 offset-1">"transactionTimestamp": "Current Date", </p>
+                            <p class="mt-0 mb-0 offset-1">"description": "My transaction -> Order Order Id: gp9253eg4o", </p>
+                            <p class="mt-0 mb-0 offset-1">"moto": false, </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentType": "PURS", </p>
+                            <p class="mt-0 mb-0 offset-1">"amount": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-2">    "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-1">}, </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentMethod": [ </p>
+                            <p class="mt-0 mb-0 offset-2">    "REFERENCE", </p>
+                            <p class="mt-0 mb-0 offset-2">    "CARD", </p>
+                            <p class="mt-0 mb-0 offset-2">    "MBWAY" </p>
+                            <p class="mt-0 mb-0 offset-1">], </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentReference": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "initialDatetime": "Current Date", </p>
+                            <p class="mt-0 mb-0 offset-2">    "finalDatetime": "Expiration Date", </p>
+                            <p class="mt-0 mb-0 offset-2">    "maxAmount": { </p>
+                            <p class="mt-0 mb-0 offset-3">        "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-3">        "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "minAmount": { </p>
+                            <p class="mt-0 mb-0 offset-3">        "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-3">        "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "entity": "24000" </p>
+                            <p class="mt-0 mb-0 offset-1">} </p>
+                            <p class="mt-0 mb-0">} </p></code>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Customer Info (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p class="mt-0 mb-0">"customer": { </p>
+                            <p class="mt-0 mb-0 offset-1">"customerInfo": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "customerName": "Client Name", </p>
+                            <p class="mt-0 mb-0 offset-2">    "customerEmail": "client.name@hostname.pt", </p>
+                            <p class="mt-0 mb-0 offset-2">    "shippingAddress": { </p>
+                            <p class="mt-0 mb-0 offset-3">      "street1": "Rua 123", </p>
+                            <p class="mt-0 mb-0 offset-3">      "street2": "porta 2", </p>
+                            <p class="mt-0 mb-0 offset-3">      "city": "Lisboa", </p>
+                            <p class="mt-0 mb-0 offset-3">      "postcode": "1200-999", </p>
+                            <p class="mt-0 mb-0 offset-3">      "country": "PT" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "billingAddress": { </p>
+                            <p class="mt-0 mb-0 offset-3">      "street1": "Rua 123", </p>
+                            <p class="mt-0 mb-0 offset-3">      "street2": "porta 2", </p>
+                            <p class="mt-0 mb-0 offset-3">      "city": "Lisboa", </p>
+                            <p class="mt-0 mb-0 offset-3">      "postcode": "1200-999", </p>
+                            <p class="mt-0 mb-0 offset-3">      "country": "PT" </p>
+                            <p class="mt-0 mb-0 offset-2">    } </p>
+                            <p class="mt-0 mb-0 offset-1">  } </p>
+                            <p class="mt-0 mb-0">}</p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingFour">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Recurring Transaction (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p class="mt-0 mb-0">"recurringTransaction": { </p>
+                            <p class="mt-0 mb-0 offset-1">"validityDate": "2022-09-28T17:37:31.4095147+00:00", </p>
+                            <p class="mt-0 mb-0 offset-1">"amountQualifier": "DEFAULT", </p>
+                            <p class="mt-0 mb-0 offset-1">"description" : "My transaction -> Order XPTO" </p>
+                            <p class="mt-0 mb-0">} </p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingFifth">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                          Tokenization (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code class="">
+                            <p class="mt-0 mb-0">"tokenisation":{  </p>
+                            <p class="mt-0 mb-0 offset-1">  "tokenisationRequest":{ </p>
+                            <p class="mt-0 mb-0 offset-2">    "tokeniseCard":true </p>
+                            <p class="mt-0 mb-0 offset-1">  } </p>
+                            <p class="mt-0 mb-0">} </p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <p><br>The response to a successful request is a JSON with an transactionID, which is required in the second step to create the payment form. </p>
+              <p>With the <span class="text-info">transactionID</span>, will be present as well a <span class="text-info">formContext</span> that will be used on teh following step</p>
+  
+              <div class="form-group w-100 mb-0">
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                  <div class="d-flex flex-column input-group">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <p class="text-dark">POST <code> https://spg.qly.site1.sibs.pt/api/v1/payments</code></p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <!-- Test Buttons -->  
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <!-- POSTMAN Button -->  
+                <div class="postman-run-button"
+                data-postman-action="collection/fork"
+                data-postman-var-1="16556944-f61413ee-fff8-4d57-a50e-a725a58580a4"
+                data-postman-collection-url="entityId=16556944-f61413ee-fff8-4d57-a50e-a725a58580a4&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                <script type="text/javascript">
+                  (function (p,o,s,t,m,a,n) {
+                    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                      (n = o.createElement("script")),
+                      (n.id = s+t), (n.async = 1), (n.src = m), n
+                    ));
+                  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                </script>
+                <!-- LOCAL Button -->             
+                <div class="d-flex w-auto h-auto ms-2">
+                  <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="setVisible('checkoutFormLocal')" >  <i class="ni ni-button-play"></i> Run Local</a>
+                </div>
+              </div>  
+              
+              <!-- TextArea to test localy -->
+                <div class="form-group d-none checkoutFormLocal w-100">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request URL:</span>
+                      <div>
+                        <code class="offset-1"><span class="baseUrl"style="display: inline;"></span>/api/v1/payments</code>  
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Headers:</span>
+                      <div> 
+                        <code>
+                          <p class="requestbt offset-1 w-90"></p>
+                          <p class="requestci offset-1"></p>
+                          <p class="requestct offset-1"></p>
+                        </code>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Body:</span>
+                      <textarea id="checkoutRequestFI" class="form-control request code-area w-100 height-800 rounded" readonly></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-secondary rounded-2 send w-200" onclick="prepareCheckout(this.parentElement)">Request Checkout</button>
+                    <br>
+                    <textarea class="response d-none code-area form-control code-area w-100 height-800 rounded overflow-hidden" readonly></textarea>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="buildForm">
+
+            <div id="buildForm">
+              <h3 class="mt-5 mb-3" >Create the payment form</h3>
+              <p>To create the payment form you just need to add the following lines of HTML/Javascript to your page and populating the following variables:</p>
+              <li>The checkout's <span class="text-info">transactionID</span> that you got in the response from step 1:</li>
+              
+              <code class="ms-4 w-100">&lt;script src="<span class="baseUrl"style="display: inline;"></span>/assets/js/widget.js?id={transactionID}"&gt;&lt;/script&gt;</code>
+              <br><br>
+
+              <li>The <code>{formContext}</code> that you get in response from the firs step, a <code>{formConfig}</code> and optionally
+                  <code>{formStyle}</code>
+              </li>
+
+              <code class="snippet"> &lt;form class="paymentSPG" spg-context="{formContext}" spg-config="{formConfig}" spg-style="{formStyle}"&gt;&lt;form&gt; </code>
+              
+
+              <!-- Build Form With Data TransactionID and Form Context-->
+              <div class="d-none flex-column buildFormWithData">
+                <h6 class="d-flex align-items-center justify-content-center w-100"> Your   <span class="text-info">&nbsp; transactionID </span>, and <span class="text-info">&nbsp; formContext &nbsp;</span> from step 1:</h6>
+                <p>TransactionID : <span class="writeTransacId mt-0 mb-0 offset-0 w-auto text-start"> <span></p>
+                <p class="writeform-Context mt-0 mb-0 offset-0 w-auto text-start"></p>
+              </div>
+
+
+              <!-- Acordion Body composition-->
+              <div class="accordion-1">
+                <div class="row">
+                    The <p><code>{formConfig}</code> and optionally <code>{formStyle}</code> are importante to being able to create the from correctly. About this two below you can find an example of each:</p>
+                </div>
+                <div class="row">
+                  <div class="accordion" id="accordionRentalF">
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingOneF">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneF" aria-expanded="false" aria-controls="collapseOneF">
+                          formConfig -> spg-config="{formConfig}"
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseOneF" class="accordion-collapse collapse" aria-labelledby="headingOneF" data-bs-parent="#accordionRentalF">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p class="mt-0 mb-0 offset-1"> { "paymentMethodList": [], </p>
+                            <p class="mt-0 mb-0 offset-1">"amount": { "value": 5, "currency": "EUR" }, </p>
+                            <p class="mt-0 mb-0 offset-1">"language": "en", </p>
+                            <p class="mt-0 mb-0 offset-1">"redirectUrl": "https://ww.pay.sibs.com/documentacao/sibs-gateway", </p>
+                            <p class="mt-0 mb-0 offset-1">"customerData": null } </p>
+                          </code>
+                          <br>
+                          <!-- <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingTwoF">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoF" aria-expanded="false" aria-controls="collapseTwoF">
+                          formStyle -> spg-style="{formStyle}"
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseTwoF" class="accordion-collapse collapse" aria-labelledby="headingTwoF" data-bs-parent="#accordionRentalF">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code class="string_to_json mt-0 mb-0">
+                            <p class="mt-0 mb-0 offset-1">{ "transaction": { </p>
+                            <p class="mt-0 mb-0 offset-2"> { </p>
+                            <p class="mt-0 mb-0 offset-2">  "layout": 'default', </p>
+                            <p class="mt-0 mb-0 offset-2">  "theme": 'default', </p>
+                            <p class="mt-0 mb-0 offset-2">  "color": { </p>
+                            <p class="mt-0 mb-0 offset-3">    "primary": "", </p>
+                            <p class="mt-0 mb-0 offset-3">    "secondary": "", </p>
+                            <p class="mt-0 mb-0 offset-3">    "border": "", </p>
+                            <p class="mt-0 mb-0 offset-3">    "surface": "", </p>
+                            <p class="mt-0 mb-0 offset-3">    "header": { </p>
+                            <p class="mt-0 mb-0 offset-4">      "text": "", </p>
+                            <p class="mt-0 mb-0 offset-4">      "background": "" </p>
+                            <p class="mt-0 mb-0 offset-3">    }, </p> 
+                            <p class="mt-0 mb-0 offset-4">    "body": { </p>
+                            <p class="mt-0 mb-0 offset-4">      "text": "", </p>
+                            <p class="mt-0 mb-0 offset-4">      "background": "" </p>
+                            <p class="mt-0 mb-0 offset-3">    } </p>
+                            <p class="mt-0 mb-0 offset-2">  }, </p>
+                            <p class="mt-0 mb-0 offset-2">  "font": "" </p>
+                            <p class="mt-0 mb-0 offset-1">} </p>
+                          </code>
+                          <!-- <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p> -->
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Build Form Button-->
+              <div class="d-flex flex-column align-items-center justify-content-center mt-5 w-100">
+                <button class="send btn btn-secondary rounded-2 send w-200" onclick="buildForm()">Build Form</button>
+                <br>
+                <div class="d-flex flex-column mt-1 w-100" id="form-container"></div>
+              </div>
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0" id="getStatusForm">
+
+            <div id="getStatusForm">
+
+              <h3 class="mt-5 mb-3">Get the payment status</h3>
+              <p>Once the payment has been processed, the customer is redirected to your redirectUrl (defined in <code>"spg-config"</p>code>), you can check the status of your transaction making a GET request.</p>
+
+              <div class="form-group w-100 mb-0">
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                  <div class="d-flex flex-column input-group">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                      <p class="text-dark w-100">GET <code> https://spg.qly.site1.sibs.pt/api/v1/payments/<span class="text-info">{transactionID}</span>/status</code></p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Test Buttons -->  
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <!-- POSTMAN Button -->  
+                <div class="postman-run-button"
+                data-postman-action="collection/fork"
+                data-postman-var-1="16556944-6e9e223f-da23-4865-8181-d990679e86a6"
+                data-postman-collection-url="entityId=16556944-6e9e223f-da23-4865-8181-d990679e86a6&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                <script type="text/javascript">
+                  (function (p,o,s,t,m,a,n) {
+                    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                      (n = o.createElement("script")),
+                      (n.id = s+t), (n.async = 1), (n.src = m), n
+                    ));
+                  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                </script>
+                <!-- LOCAL Button -->             
+                <div class="d-flex w-auto h-auto ms-2 align-items-center justify-content-center">
+                  <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="getTransactionStatus(this.parentElement.parentElement.parentElement)"> <i class="ni ni-button-play"></i> Get Status</a>
+                </div>
+
+              </div> 
+              
+              <div class="form-group">
+                <div class="d-flex d-none flex-column input-group align-items-center justify-content-center getstatusUrl" id="getStatusParent">
+                  <div class="form-group w-100 mb-0">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                      <div class="d-flex flex-column input-group">
+                        <span class="text-dark">Request URL:</span>
+                        <div>
+                          <p class="offset-1 w-100"><code><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/status</code> </p> 
+                        </div>
+                      </div>
+  
+                      <div class="d-flex flex-column input-group mb-1">
+                        <span class="text-dark">Request Headers:</span>
+                        <!--<div> -->
+                          <code>
+                            <p class="requestbt offset-1 w-90"></p>
+                            <p class="requestci offset-1"></p>
+                            <p class="requestct offset-1 "></p>
+                          </code>
+                        <!--</div>-->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <textarea class="response d-none code-area form-control code-area w-100 height-800 rounded" readonly></textarea>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- DOCUMENTATION Server-to-Server INTEGRATION -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="servertoserver">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">Server-to-Server</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+            <p>The <b>Server to Server Integration</b> is a direct integration that enables direct communication between the merchant and SIBS.</p>
+
+            <p>Thru this integration the cardholders can finalize the payment without being redirected to the SIBS's form.</p>
+            
+            <p>For Card payment method The integration is suitable for <b></b>PCI-DSS Certificated</b> merchants that need more flexible workflows on frontend and backend processes.</p>
+
+            <p>Server-to-Server Integration</b> is based on the following steps:</p>
+              <li class="ms-3"><b>1. Prepare the checkout:</b> sends payment data, including payment method data.</li>
+              <li class="ms-3"><b>2. Display payment method option to customer:</b> displays payment method option to customer.</li>
+              <li class="ms-3"><b>3. Update payment method data:</b> sends payment method and its required data.</li>  
+              <li class="ms-3"><b>4. Get the payment status:</b> gets the payment status</li>
+            
+            <br>
+            <hr class="horizontal dark mt-0"  id="createCheckoutSTS">
+  
+            <div id="createCheckoutSTS">  
+              <h4 class="mt-5 mb-3">Create Checkout Server-to-Server</h4>
+              <!-- Sames as Form Integration-->
+              <p>First, perform a server-to-server POST request, the same as Form Integration, to prepare the checkout with the required data,where you should include the payment type, amount, currency and payment methods allowed.</p>
+              
+              <!-- Acordion Body composition-->
+              <div class="accordion-2">
+                <div class="row">
+                    <p>The JSON of your POST body, can be composed of various <span class="text-info">Complex Types:</span> </p>
+                </div>
+                <div class="row">
+                  <!-- same as form interation-->
+                  <div class="accordion" id="accordionRentalS">
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingOneS">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneS" aria-expanded="false" aria-controls="collapseOneS">
+                          Merchant (mandatory)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseOneS" class="accordion-collapse collapse" aria-labelledby="headingOneS" data-bs-parent="#accordionRentalS">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p>"merchant": {
+                            <p class="mt-0 mb-0 offset-1">"terminalId": {{terminalId}}, </p>
+                            <p class="mt-0 mb-0 offset-1">"channel": "web", </p>
+                            <p class="mt-0 mb-0 offset-1"> "merchantTransactionId": "{{mti}}" </p>
+                            <p>}</code>
+                            <br>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingTwoS">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoS" aria-expanded="false" aria-controls="collapseTwoS">
+                          Transaction (mandatory)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseTwoS" class="accordion-collapse collapse" aria-labelledby="headingTwoS" data-bs-parent="#accordionRentalS">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code class="string_to_json mt-0 mb-0">
+                            <p class="mt-0 mb-0">"transaction": { </p>
+                            <p class="mt-0 mb-0 offset-1">"transactionTimestamp": "Current Date", </p>
+                            <p class="mt-0 mb-0 offset-1">"description": "My transaction -> Order XPTO", </p>
+                            <p class="mt-0 mb-0 offset-1">"moto": false, </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentType": "PURS", </p>
+                            <p class="mt-0 mb-0 offset-1">"amount": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-2">    "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-1">}, </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentMethod": [ </p>
+                            <p class="mt-0 mb-0 offset-2">    "REFERENCE", </p>
+                            <p class="mt-0 mb-0 offset-2">    "CARD", </p>
+                            <p class="mt-0 mb-0 offset-2">    "MBWAY" </p>
+                            <p class="mt-0 mb-0 offset-1">], </p>
+                            <p class="mt-0 mb-0 offset-1">"paymentReference": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "initialDatetime": "Current Date", </p>
+                            <p class="mt-0 mb-0 offset-2">    "finalDatetime": "Expiration Date", </p>
+                            <p class="mt-0 mb-0 offset-2">    "maxAmount": { </p>
+                            <p class="mt-0 mb-0 offset-3">        "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-3">        "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "minAmount": { </p>
+                            <p class="mt-0 mb-0 offset-3">        "value": 5, </p>
+                            <p class="mt-0 mb-0 offset-3">        "currency": "EUR" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "entity": "24000" </p>
+                            <p class="mt-0 mb-0 offset-1">} </p>
+                            <p class="mt-0 mb-0">} </p></code>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer"class="text-info">SIBS API Market </a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingThreeS">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeS" aria-expanded="false" aria-controls="collapseThreeS">
+                          Customer Info (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseThreeS" class="accordion-collapse collapse" aria-labelledby="headingThreeS" data-bs-parent="#accordionRentalS">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p class="mt-0 mb-0">"customer": { </p>
+                            <p class="mt-0 mb-0 offset-1">"customerInfo": { </p>
+                            <p class="mt-0 mb-0 offset-2">    "customerName": "Client Name", </p>
+                            <p class="mt-0 mb-0 offset-2">    "customerEmail": "client.name@hostname.pt", </p>
+                            <p class="mt-0 mb-0 offset-2">    "shippingAddress": { </p>
+                            <p class="mt-0 mb-0 offset-3">      "street1": "Rua 123", </p>
+                            <p class="mt-0 mb-0 offset-3">      "street2": "", </p>
+                            <p class="mt-0 mb-0 offset-3">      "city": "Lisboa", </p>
+                            <p class="mt-0 mb-0 offset-3">      "postcode": "1200-999", </p>
+                            <p class="mt-0 mb-0 offset-3">      "country": "PT" </p>
+                            <p class="mt-0 mb-0 offset-2">    }, </p>
+                            <p class="mt-0 mb-0 offset-2">    "billingAddress": { </p>
+                            <p class="mt-0 mb-0 offset-3">      "street1": "Rua 123", </p>
+                            <p class="mt-0 mb-0 offset-3">      "street2": "", </p>
+                            <p class="mt-0 mb-0 offset-3">      "city": "Lisboa", </p>
+                            <p class="mt-0 mb-0 offset-3">      "postcode": "1200-999", </p>
+                            <p class="mt-0 mb-0 offset-3">      "country": "PT" </p>
+                            <p class="mt-0 mb-0 offset-2">    } </p>
+                            <p class="mt-0 mb-0 offset-1">  } </p>
+                            <p class="mt-0 mb-0">}</p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingFourS">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourS" aria-expanded="false" aria-controls="collapseFourS">
+                          Recurring Transaction (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseFourS" class="accordion-collapse collapse" aria-labelledby="headingFourS" data-bs-parent="#accordionRentalS">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code>
+                            <p class="mt-0 mb-0">"recurringTransaction": { </p>
+                            <p class="mt-0 mb-0 offset-1">"validityDate": "2022-09-28T17:37:31.4095147+00:00", </p>
+                            <p class="mt-0 mb-0 offset-1">"amountQualifier": "DEFAULT", </p>
+                            <p class="mt-0 mb-0 offset-1">"description" : "My transaction -> Order XPTO" </p>
+                            <p class="mt-0 mb-0">} </p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-header" id="headingFifthS">
+                        <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifthS" aria-expanded="false" aria-controls="collapseFifthS">
+                          Tokenization (Opcional)
+                          <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                      <div id="collapseFifthS" class="accordion-collapse collapse" aria-labelledby="headingFifthS" data-bs-parent="#accordionRentalS">
+                        <div class="accordion-body text-sm opacity-8">
+                          <code class="">
+                            <p class="mt-0 mb-0">"tokenisation":{  </p>
+                            <p class="mt-0 mb-0 offset-1">  "tokenisationRequest":{ </p>
+                            <p class="mt-0 mb-0 offset-2">    "tokeniseCard":true </p>
+                            <p class="mt-0 mb-0 offset-1">  } </p>
+                            <p class="mt-0 mb-0">} </p>
+                            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p><br>The response to a successful request is a JSON with an transactionID, which is required in the second step to create a transaction.</p>
+              <p>With the <span class="text-info">transactionID</span>, will be present as well a <span class="text-info">transactionSignature</span> that will be used on the following step</p>
+
+              <div class="form-group w-100 mb-0">
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                  <div class="d-flex flex-column input-group">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <p class="text-dark">POST <code> https://spg.qly.site1.sibs.pt/api/v1/payments</code></p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Test Buttons -->  
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <!-- POSTMAN Button -->  
+                <div class="postman-run-button"
+                data-postman-action="collection/fork"
+                data-postman-var-1="16556944-f61413ee-fff8-4d57-a50e-a725a58580a4"
+                data-postman-collection-url="entityId=16556944-f61413ee-fff8-4d57-a50e-a725a58580a4&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                <script type="text/javascript">
+                  (function (p,o,s,t,m,a,n) {
+                    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                      (n = o.createElement("script")),
+                      (n.id = s+t), (n.async = 1), (n.src = m), n
+                    ));
+                  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                </script>
+                <!-- LOCAL Button -->             
+                <div class="d-flex w-auto h-auto ms-2">
+                  <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="setVisible('checkoutSTSLocal')" >  <i class="ni ni-button-play"></i> Run Local</a>
+                </div>
+              </div>  
+              
+              
+              <!-- TextArea to test localy -->
+              <div class="form-group d-none checkoutSTSLocal w-100">
+                  <div class="d-flex flex-column input-group align-items-center justify-content-center w-100">
+                    
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request URL:</span>
+                      <div>
+                        <code class="offset-1"><span class="baseUrl"style="display: inline;"></span>/api/v1/payments</code>  
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Headers:</span>
+                      <div> 
+                        <code>
+                          <p class="requestbt offset-1 w-90"></p>
+                          <p class="requestci offset-1"></p>
+                          <p class="requestct offset-1"></p>
+                        </code>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Body:</span>
+                      <textarea id="checkoutRequestSTS" class="form-control request code-area w-100 height-800 rounded" readonly></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-secondary rounded-2 send w-200" onclick="prepareCheckout(this.parentElement)">Request Checkout</button>
+                    <br>
+                    <textarea class="response d-none code-area form-control code-area w-100 height-800 rounded overflow-hidden" readonly></textarea>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="generatePayment">
+
+            <div id="generatePayment">
+            <h4 class="mt-5 mb-3" id="generatePayment">Generate Transaction</h4>        
+            <h6>Configuration on Server-To-Server</h6>
+            <p>Note that all the following requests need an Authorization Header with the "transactionsSignature" returned from checkout operation.</p>
+            <p>In this requests, the Bearer Token is replaced by the checkout response "transactionSignature".</p>
+            <p>Example:</p>
+            <br>
+            <p><code class="offset-1 w-100">Authorization: Digest {transactionSignature}</code></p>
+
+            <div id="generatePaymentMB">
+              <h5 class="mt-5 mb-3" >Multibanco</h5>
+              <div>
+
+                <div class="form-group w-100 mb-0">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group">
+                      <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                        <p class="text-dark w-100">POST <code> https://spg.qly.site1.sibs.pt/api/v1/payments/<span class="text-info">{transactionID}</span>/service-reference/generate</code></p>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Multibanco -->
+                <h6 class="d-flex flex-column align-items-center justify-content-center">Generate Multibanco Reference</h6>
+
+                <!-- Test Buttons -->  
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <!-- POSTMAN Button -->  
+                  <div class="postman-run-button"
+                  data-postman-action="collection/fork"
+                  data-postman-var-1="16556944-66f5f9b3-63b2-409f-963e-01a32d2747a3"
+                  data-postman-collection-url="entityId=16556944-66f5f9b3-63b2-409f-963e-01a32d2747a3&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                  <script type="text/javascript">
+                    (function (p,o,s,t,m,a,n) {
+                      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                        (n = o.createElement("script")),
+                        (n.id = s+t), (n.async = 1), (n.src = m), n
+                      ));
+                    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                  </script>
+                  <!-- LOCAL Button -->             
+                  <div class="d-flex w-auto h-auto ms-2">
+                    <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="payMB(this.parentElement.parentElement.parentElement)" >  <i class="ni ni-button-play"></i> Run Local</a>
+                  </div>
+                </div>  
+                
+                <div class="d-none form-group payMBHeader">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group w-100">
+                      <span class="text-dark">Request URL:</span>
+                      <div>
+                        <p class="d-flex align-items-center justify-content-center w-100"><code class="d-flex align-items-center justify-content-center"><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/service-reference/generate</code> </p> 
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column input-group mb-1">
+                      <span class="text-dark">Request Headers:</span>
+                      <!--<div> -->
+                        <code>
+                          <p class="requestts offset-1 w-90">Authorization: Digest {transactionSignature}</p>
+                          <p class="requestci offset-1"></p>
+                          <p class="requestct offset-1 "></p>
+                        </code>
+                      <!--</div>-->
+                    </div>
+                    
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Body:</span>
+                      <p><code  class="offset-1">{}</code></p>
+                      
+                    </div>
+                  </div>
+              
+                </div>
+                <textarea class="response d-none code-area form-control code-area w-100 height-600 rounded" readonly></textarea>
+
+              </div>
+            </div>
+            <br>
+
+            <div  id="generatePaymentMBWAY">
+              <h5 class="mt-5 mb-3">MBWAY</h5>
+              <div>
+                <!-- MBWAY -->
+                <h6 class="d-flex flex-column align-items-center justify-content-center">Generate MBWAY Payment</h6>
+                
+                <div class="d-flex flex-row align-items-center justify-content-center mb-2">
+                  <p class="mb-0 me-2">Insert the phone number to use:</p>
+                  <input class="form-control w-auto" onfocusout="changeMBWAYAlias(this)" id="mbway_id"></input>
+                </div>
+
+                <div class="form-group w-100 mb-0">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group">
+                      <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                        <p class="text-dark w-100">POST <code> https://spg.qly.site1.sibs.pt/api/v1/payments/<span class="text-info">{transactionID}</span>/service-reference/generate</code></p>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Test Buttons -->  
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <!-- POSTMAN Button -->  
+                  <div class="postman-run-button"
+                  data-postman-action="collection/fork"
+                  data-postman-var-1="16556944-d8a658c0-e374-4c76-8d76-9360f407630d"
+                  data-postman-collection-url="entityId=16556944-d8a658c0-e374-4c76-8d76-9360f407630d&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                  <script type="text/javascript">
+                    (function (p,o,s,t,m,a,n) {
+                      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                        (n = o.createElement("script")),
+                        (n.id = s+t), (n.async = 1), (n.src = m), n
+                      ));
+                    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                  </script>
+                  <!-- LOCAL Button -->             
+                  <div class="d-flex w-auto h-auto ms-2">
+                    <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="payMBWAY(this.parentElement.parentElement.parentElement)" >  <i class="ni ni-button-play"></i> Run Local</a>
+                  </div>
+                </div>  
+                
+
+                <div class="d-none form-group payMBWayHeader">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group w-100">
+                      <span class="text-dark">Request URL:</span>
+                      <div>
+                        <p><code class="offset-1 w-100"><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/mbway-id/purchase</code></p> 
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column input-group mb-1">
+                      <span class="text-dark">Request Headers:</span>
+                      <!--<div> -->
+                        <code>
+                          <p class="requestts offset-1 w-90">Authorization: Digest {transactionSignature}</p>
+                          <p class="requestci offset-1"></p>
+                          <p class="requestct offset-1 "></p>
+                        </code>
+                      <!--</div>-->
+                    </div>
+                    
+                    <div class="d-flex flex-column input-group">
+                      <span class="text-dark">Request Body:</span>
+                      <code>
+                          <p class="offset-1 requetsMBWAYBody"></p>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+                <textarea class="response d-none code-area form-control code-area w-100 height-600 rounded" readonly></textarea>
+
+              </div>
+
+            </div>
+            <br>
+            
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="getStatusSTS">
+
+            <div id="getStatusSTS">
+              <h4 class="mt-5 mb-3">Get the payment status</h4>
+              <p>Once the payment has been processed, the customer is redirected to your redirectUrl (defined in 2.1), you can check the status of your transaction making a GET request.</p>
+
+              <div class="form-group w-100 mb-0">
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                  <div class="d-flex flex-column input-group">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                      <p class="text-dark w-100">GET <code> https://spg.qly.site1.sibs.pt/api/v1/payments/<span class="text-info">{transactionID}</span>/status</code></p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Test Buttons -->  
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <!-- POSTMAN Button -->  
+                <div class="postman-run-button"
+                data-postman-action="collection/fork"
+                data-postman-var-1="16556944-6e9e223f-da23-4865-8181-d990679e86a6"
+                data-postman-collection-url="entityId=16556944-6e9e223f-da23-4865-8181-d990679e86a6&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                <script type="text/javascript">
+                  (function (p,o,s,t,m,a,n) {
+                    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                      (n = o.createElement("script")),
+                      (n.id = s+t), (n.async = 1), (n.src = m), n
+                    ));
+                  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                </script>
+                
+                <!-- LOCAL Button -->             
+                <div class="d-flex w-auto h-auto ms-2 align-items-center justify-content-center">
+                  <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="getTransactionStatus(this.parentElement.parentElement.parentElement)"> <i class="ni ni-button-play"></i> Get Status</a>
+                </div>
+
+              </div> 
+              
+              <div class="form-group">
+                <div class="d-flex d-none flex-column input-group align-items-center justify-content-center getstatusUrl" id="getStatusParent">
+                  <div class="form-group w-100 mb-0">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                      <div class="d-flex flex-column input-group">
+                        <span class="text-dark">Request URL:</span>
+                        <div>
+                          <p class="offset-1 w-100"><code><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/status</code> </p> 
+                        </div>
+                      </div>
+  
+                      <div class="d-flex flex-column input-group mb-1">
+                        <span class="text-dark">Request Headers:</span>
+                        <!--<div> -->
+                          <code>
+                            <p class="requestbt offset-1 w-90"></p>
+                            <p class="requestci offset-1"></p>
+                            <p class="requestct offset-1 "></p>
+                          </code>
+                        <!--</div>-->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <textarea class="response d-none code-area form-control code-area w-100 height-800 rounded" readonly></textarea>
+                </div>
+              </div>
+            </div> 
+
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- DOCUMENTATION BackOffice Operations -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="backoffice">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">Backoffice Operations</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+
+            <p>The <b>Backoffice APIs</b> allows merchants to perform different Backoffice operations over their transactions, form example a <b>capture</b>, <b>refund</b>, <b>cancelation</b> and <b>recurring transaction</b>.</p>
+            
+            <br>
+            <hr class="horizontal dark mt-0"  id="capture">
+
+            <div id="capture">
+              <h4 class="mt-5 mb-3 w-100">Capture</h4>
+
+              <p>A <b>capture</b> is used to request clearing for previously authorized funds.</p>
+              <p>A <b>capture</b> request is performed using a previous preauthorization (AUTH) payment by referencing its transactionID and sending a POST request over HTTPS to the /payments/{transactionID}/capture endpoint.</p>
+              <p>Captures can happen in different ways:</p>
+              <li class="ms-3">Full, capture the full amount authorized and finish the purchase</li> 
+              <li class="ms-3">Partial, split the capture over one or several capture requests, up to the total amount authorized</li> 
+              <br>
+
+              <div>
+                <div class="form-group w-100 mb-0">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group">
+                      <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                        <p class="offset-1 w-100"><code>POST <span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/capture</code> </p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <!-- Test Buttons -->  
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <!-- POSTMAN Button -->  
+                    <div class="postman-run-button"
+                    data-postman-action="collection/fork"
+                    data-postman-var-1="16556944-c1c00d79-0c24-435d-be70-fba4cf38dd74"
+                    data-postman-collection-url="entityId=16556944-c1c00d79-0c24-435d-be70-fba4cf38dd74&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                    <script type="text/javascript">
+                      (function (p,o,s,t,m,a,n) {
+                        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                          (n = o.createElement("script")),
+                          (n.id = s+t), (n.async = 1), (n.src = m), n
+                        ));
+                      }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                    </script>
+                    <!-- LOCAL Button -->             
+                    <div class="d-flex w-auto h-auto ms-2">
+                      <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="setVisible('captureBO')" >  <i class="ni ni-button-play"></i> Run Local</a>
+                    </div>
+                  </div>  
+                                    
+                  <!-- TextArea to test localy -->
+                  <div class="form-group d-none captureBO w-100">
+                      <div class="d-flex flex-column input-group align-items-center justify-content-center w-100">
+                        
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request URL:</span>
+                          <div>
+                            <p><code class="offset-1 w-100"><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/capture</code></p> 
+                          </div>
+                        </div>
+    
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request Headers:</span>
+                          <div> 
+                            <code>
+                              <p class="requestbt offset-1 w-90"></p>
+                              <p class="requestci offset-1"></p>
+                              <p class="requestct offset-1"></p>
+                            </code>
+                          </div>
+                        </div>
+    
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request Body:</span>
+                          <textarea id="request_capture" class="form-control request code-area w-100 height-500 rounded" readonly></textarea>
+                        </div>
+                        <br>
+                        <button class="btn btn-secondary rounded-2 send w-200" onclick="doCapture(this.parentElement)">Request Capture</button>
+                        <br>
+                        <textarea class="response d-none code-area form-control code-area w-100 height-600 rounded overflow-hidden" readonly></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <br>
+            <hr class="horizontal dark mt-0"  id="cancelation">
+
+            <div id="cancelation">
+              <h4 class="mt-5 mb-3 w-100" >Cancelation</h4>
+              
+              <p>A <b>cancelation</b> is performed against a previous payment authorization (AUTH), by referencing its transactionID and sending a POST request over HTTPS to the /payments/{transactionID}/cancelation endpoint.</p>
+
+              <p>When canceling a payment and if sent within the time-frame the authorization is not captured yet, the cancelation causes an authorization reversal request to be sent to the card issuer to clear the funds held against the authorization. If requested over a MULTIBANCO Reference generated not paid, the reference will be cancelled</p>        
+              <br>
+
+              <div>
+                <div class="form-group w-100 mb-0">
+                  <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <div class="d-flex flex-column input-group">
+                      <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                        <p class="offset-1 w-100"><code>POST <span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/cancelation</code> </p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <!-- Test Buttons -->  
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <!-- POSTMAN Button -->  
+                    <div class="postman-run-button"
+                    data-postman-action="collection/fork"
+                    data-postman-var-1="16556944-d970b6d5-ac02-4275-8568-839d26b7c877"
+                    data-postman-collection-url="entityId=16556944-d970b6d5-ac02-4275-8568-839d26b7c877&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                    <script type="text/javascript">
+                      (function (p,o,s,t,m,a,n) {
+                        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                          (n = o.createElement("script")),
+                          (n.id = s+t), (n.async = 1), (n.src = m), n
+                        ));
+                      }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                    </script>
+                    <!-- LOCAL Button -->             
+                    <div class="d-flex w-auto h-auto ms-2">
+                      <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="setVisible('cancelBO')" >  <i class="ni ni-button-play"></i> Run Local</a>
+                    </div>
+                  </div>  
+                                    
+                  <!-- TextArea to test localy -->
+                  <div class="form-group d-none cancelBO w-100">
+                      <div class="d-flex flex-column input-group align-items-center justify-content-center w-100">
+                        
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request URL:</span>
+                          <div>
+                            <p><code class="offset-1 w-100"><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/cancelation</code></p> 
+                          </div>
+                        </div>
+    
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request Headers:</span>
+                          <div> 
+                            <code>
+                              <p class="requestbt offset-1 w-90"></p>
+                              <p class="requestci offset-1"></p>
+                              <p class="requestct offset-1"></p>
+                            </code>
+                          </div>
+                        </div>
+    
+                        <div class="d-flex flex-column input-group">
+                          <span class="text-dark">Request Body:</span>
+                          <textarea id="request_cancellation" class="form-control request code-area w-100 height-500 rounded" readonly></textarea>
+                        </div>
+                        <br>
+                        <button class="btn btn-secondary rounded-2 send w-200" onclick="doCancellation(this.parentElement)">Request Cancelation</button>
+                        <br>
+                        <textarea class="response d-none code-area form-control code-area w-100 height-600 rounded overflow-hidden" readonly></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="refund">
+
+            <div id="refund">
+            <h4 class="mt-5 mb-3 w-100" >Refund</h4>
+            
+            <p>The purpose of this operation is to <b>refund</b> the amount of a previous payment, crediting the cardholder account and debiting the Merchant account.</p>
+            <p>A <b>refund</b> can be:</p>
+            <p><li class="ms-3">A <b>refund</b> is performed against a previous payment, referencing its transactionID by sending a POST request over HTTPS to the /payments/{transactionID}/refund endpoint.</li></p>
+            <p><li class="ms-3">A <b>refund</b> can be performed against purchase (PURS) or captured preauthorization (AUTH -> Capture) payment types.</li></p>
+            <p>It can be a Full refund, when the total amount of the purchase is refunded to the cardholder or a Partial, when a subtotal of the total purchase is refunded to the cardholder</p>
+            <br>
+
+            <div>
+              <div class="form-group w-100 mb-0">
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                  <div class="d-flex flex-column input-group">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                      <p class="offset-1 w-100"><code>POST <span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/refund</code> </p> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <!-- Test Buttons -->  
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <!-- POSTMAN Button -->  
+                  <div class="postman-run-button"
+                  data-postman-action="collection/fork"
+                  data-postman-var-1="16556944-c354d7d8-362d-42c4-adb7-881b0a9bb48d"
+                  data-postman-collection-url="entityId=16556944-c354d7d8-362d-42c4-adb7-881b0a9bb48d&entityType=collection&workspaceId=e12f966d-4005-4cd2-ba21-a60fb09f8df7"></div>
+                  <script type="text/javascript">
+                    (function (p,o,s,t,m,a,n) {
+                      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+                      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+                        (n = o.createElement("script")),
+                        (n.id = s+t), (n.async = 1), (n.src = m), n
+                      ));
+                    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+                  </script>
+                  <!-- LOCAL Button -->             
+                  <div class="d-flex w-auto h-auto ms-2">
+                    <a class="btn bg-gradient-info mb-0 btn-sm rounded" onclick="setVisible('refundBO')" >  <i class="ni ni-button-play"></i> Run Local</a>
+                  </div>
+                </div>  
+                                  
+                <!-- TextArea to test localy -->
+                <div class="form-group d-none refundBO w-100">
+                    <div class="d-flex flex-column input-group align-items-center justify-content-center w-100">
+                      
+                      <div class="d-flex flex-column input-group">
+                        <span class="text-dark">Request URL:</span>
+                        <div class="w-100">
+                          <p><code class="offset-1"><span class="baseUrl"></span>/api/v1/payments/<span class="writeTransacId text-info">{transactionID}</span>/refund</code></p> 
+                        </div>
+                      </div>
+  
+                      <div class="d-flex flex-column input-group">
+                        <span class="text-dark">Request Headers:</span>
+                        <div> 
+                          <code>
+                            <p class="requestbt offset-1 w-90"></p>
+                            <p class="requestci offset-1"></p>
+                            <p class="requestct offset-1"></p>
+                          </code>
+                        </div>
+                      </div>
+  
+                      <div class="d-flex flex-column input-group">
+                        <span class="text-dark">Request Body:</span>
+                        <textarea id="request_refund" class="form-control request code-area w-100 height-500 rounded" readonly></textarea>
+                      </div>
+                      <br>
+                      <button class="btn btn-secondary rounded-2 send w-200" onclick="doRefund(this.parentElement)">Request Refund</button>
+                      <br>
+                      <textarea class="response d-none code-area form-control code-area w-100 height-600 rounded overflow-hidden" readonly></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="recurring">
+
+            <h4 class="mt-5 mb-3" id="recurring">Recurring</h4>
+            <p>The purpose of this operation is to allow the merchant to charge a recurrent service, in the first stage the cardholder requests the payment as an Initial recurring and authorize the merchant to do future debits (following recurring) accordingly with the service</p>
+            <li class="offset-2">Initial Recurring – Needed to register as initial recurring</li>
+            <li class="offset-2">Following Recurring – Triggers following payments</li>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- DOCUMENTATION Webhooks -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="webhook">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">Webhooks</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+
+            <div id="webhook">
+              <p>A <b>webhook</b> is an API that providers with real-time information. SIBS uses webhooks to inform the merchants regarding changes on a Transaction payment status.</p>
+              <p>The Merchant can receive the notifications either by <b>email</b> or <b>endpoint</b> (notification assembling to the status inquiry – Checkout Status), however only a notification will be sent for each transaction.</p>
+              <p>Notifications are sent by endpoint are straight to the URL configured by the Merchant. The parameterization of this endpoint needs to be done on the SIBS Gateway Backoffice.</p>
+              <p>Each time that SIBS Gateway receives an update on the payment status of a transaction a notification will be sent with the new transaction payment status.</p>
+              <p>Every day SIBS Gateway send a summarized email with the newest failed notifications (email needs to be registered on the Backoffice).</p>
+              <p>There is no guarantee on the order of messages, especially if the time difference between the notifications is smaller than the time it takes to process them or by any communication or systems issues. Once the issues are sort out, new notifications will arrive in real time and old notifications would be resent. In case no notification is received the option “Checkout Status” should be used before rejecting any transaction.</p>
+              <p>Notifications are sent as HTTP callbacks (webhooks) to an endpoint on your server. Please ensure you have a valid SSL certificate chain. Self-signed certificates are not valid.
+              <p>To receive notifications, you need a server that has:</p>
+              <li class="offset-1">An endpoint that can receive an HTTP POST.</li>
+              <li class="offset-1">An open TCP port for HTTPS traffic (443, 80) with TLSv1.2.</li>
+              <p>Depending on your network and security requirements, you might also need to add our network to your firewall's whitelist.</p>
+              <p>To ensure that your server is properly accepting notifications, we require you to acknowledge every notification of any type with an HTTP 200 and a response containing:</p> 
+              <p class="offset-1">{</p>
+                <p class="offset-1">"statusCode": "200",</p>
+                <p class="offset-1">"statusMsg": "Success",</p>
+                <p class="offset-1">"notificationID": "2533e456-5e36-42c8-9eea-7961902f185e"</p>
+              <p class="offset-1">}</p>
+              <p>When your server receives a notification it should:</p>
+              <li class="offset-1">Decrypt the notification</li>
+              <li class="offset-1">Store the notification in your database.</li>
+              <li class="offset-1">Acknowledge the notification with an HTTP 200 OK and the following response body: <code>{ "statusCode": "200", "statusMsg": "Success","notificationID": "2533e456-5e36-42c8-9eea-7961902f185e" }</code> </li>
+            </div>
+
+            <br>
+            <hr class="horizontal dark mt-0"  id="decrypt">
+
+            <div id="decrypt">
+              <h4 class="mt-5 mb-3" >Decrypt</h4>
+              <p>The content of notification is encrypted to protect data from fraud attempts. When converting human-readable string to hexadecimal format, we use UTF-8.</p>
+              <p></p>
+              <li> Encryption algorithm :	AES</li>
+              <li> Block mode	: GCM</li>
+              <li> Padding : None</li>
+              <li> Initialization vector : In HTTP header (X-Initialization-Vector)</li>
+              <li> Authentication tag	: In HTTP header (X-Authentication-Tag)</li>
+              <p></p>
+              <p>
+                Format of body: Base64
+                Format of Initialization Vector: Base64
+              </p>
+
+              <div class="accordion" id="accordionRental">
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingOneN">
+                    <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneN" aria-expanded="false" aria-controls="collapseOneN">
+                      Test Notification Example:
+                      <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                    </button>
+                  </h5>
+                  <div id="collapseOneN" class="accordion-collapse collapse" aria-labelledby="headingOneN" data-bs-parent="#accordionRental">
+                    <div class="accordion-body text-sm opacity-8">
+                      <div class="card card-body">
+                        <div class="table-responsive">
+                          <table class="table align-items-center mb-0">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      Secret:  
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0">O0Bur9uhZkS54NkwFhVyeutED6DhLbOQUBDt3i3W/C4=</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      X-Authentication-Tag:
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0">Ytw9bzOS1pXqizAKMGXVQ==</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      Content-Type:
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0">text/plain</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      X-Initialization-Vector:
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0">Ldo3OyWNgRchSF3C</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      Body before decryption:
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0 w-100">WgErmJOV6wg3BuRkrgZLUUnh57BYzhIzvBFdpadHRsc43UcjtZEevRGDIDu3YxocXMXe8O+xQpMRxwTJPv766IaNqUiUEjAIj</p>
+                                  <p class="text-xs font-weight-bold mb-0 w-100">ZSMEYCZ0pBursUYB+9nB4eqNUiAS2MJ9sR+Cj2iBf6G6KXLfp9K6dK7c0UED5XrJwbovY8X8pMyxktFTEaflp0e76ZywsCQvt</p>
+                                  <p class="text-xs font-weight-bold mb-0 w-100">qEtqNz9uYEyqmAANbsBwbwyWpkCC8H1kZN2fV3CYetW1CTPmWdPp3C18Yfh826NN4XlKu1VmUmea70PyjmRKSsjPXpfrRX8ud</p>
+                                  <p class="text-xs font-weight-bold mb-0 w-100">elVIK2WTFtnRxD4x588d1nlGY5D5DQmJ8KYZzfvjTmDXGAPiRIEGuXp8h6rBQXS8P/m1llBtboGgQv4MmW3zvq0G6KFlYIcM=</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div>
+                                      Body after decryption:
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">{</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"returnStatus": {</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-1">"statusMsg": "Success",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-1">"statusCode": "000"</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">},</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"paymentStatus": "Success",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"paymentMethod": "CARD",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"transactionID": "WebhookTest",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"amount": {</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-2">"currency": "EUR",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-2">"value": 10.0</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">},</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"merchant": {</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-2">"terminalId": 1000000</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">},</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"paymentType": "PURS",</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">"notificationID": "f153c248-e7be-4c12-8d88-6c9f1f3b83e4"</p>
+                                  <p class="text-xs font-weight-bold mb-0 offset-0">}</p>
+                                </td>
+                              </tr>		
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <br>
+            <br>
+            <hr class="horizontal dark mt-0"  id="examples">
+
+            <div id="examples">
+              <h4 class="mt-5 mb-3" >Examples</h4>
+              <p> Below there are 4 examples of how to decrypt the webhook notification</p>
+
+              <div class="accordion" id="accordionRentalE">
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingOneE">
+                    <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneE" aria-expanded="false" aria-controls="collapseOneE">
+                      C#
+                      <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                    </button>
+                  </h5>
+                  <div id="collapseOneE" class="accordion-collapse collapse" aria-labelledby="headingOneE" data-bs-parent="#accordionRentalE">
+                    <div class="accordion-body text-sm opacity-8">
+                      <div class="card card-body bg-dark text-white">
+                        <div class="table-responsive">
+                          <table class="table align-items-center mb-0 text-white"">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div class="">
+                                      <code class="text-white">
+                                        <p class="text-sm mb-0">using System;</p> 
+                                        <p class="text-sm mb-0">using System.Security.Cryptography;</p> 
+                                        <p class="text-sm mb-0">using System.Text;</p> 
+                                        <br> 
+                                        <p class="text-sm mb-0">public static class Program {</p> 
+                                        <p class="text-sm mb-0 ms-6">	public static void Main() {</p> 
+                                        <p class="text-sm mb-0 ms-8">		byte[] secret = System.Convert.FromBase64String("6fNDiYU0T0/evFpmfycNai/AqF24i+rT0OmuVw0/sGQ=");</p> 
+                                        <br> 
+                                        <p class="text-sm mb-0 ms-8">		byte[] ciphertext = System.Convert.FromBase64String("9bIjURJIcwoKvQr+ifOTH3HbMX+IqmsRqHuG/I1GfbSX89JE5DcWh/p8QROC5pRAuYZ7"+</p> 
+                                        <p class="text-sm mb-0 ms-12">															"ln7RSkHXJdZpVz1LFQ2859WsetvHHui7qYmfxATOO1j0AQuPdAD3FeRH0kR4s/v3c2nV8"+</p> 
+                                        <p class="text-sm mb-0 ms-12">															"1DnUXFCnQER/+VWrYdbu5vn8gm+diSE6CHvkK+ODy0ebVi5O6VBnWVjgBUG33VwWiAyIl"+</p> 
+                                        <p class="text-sm mb-0 ms-12">															"7Ik435V55WnZgynH3GfbVYoGwZ5UhYtn3yw2yruiLAKu6VTBvnh/ZJP21cHCJSF6NPSd+8"+</p> 
+                                        <p class="text-sm mb-0 ms-12">															"1gzWFU/+ECm3cf3uBbCkmKmL7HxRhRxhG0lMtX6ELZOXuw3eDJ1BTu+sSMkV/5Xk+5XX48"+</p> 
+                                        <p class="text-sm mb-0 ms-12">															"XmP6CGZ7KmP7Q3Fw1kZmhn0unFyv0Gw8PjT1Ohny/HMgNl16I=");</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">		byte[] nonce = System.Convert.FromBase64String("RYjpCMtUmK54T6Lk");</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">		byte[] tag = System.Convert.FromBase64String("FUajWHmZjP4A5qaa1G0kxw==");</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">		using (var aes = new AesGcm(secret))</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">		{</p> 
+                                        <p class="text-sm mb-0 ms-12">			var plaintextBytes = new byte[ciphertext.Length];</p> <p class="text-sm mb-0 ms-12"></p> 
+                                        <p class="text-sm mb-0 ms-12">			aes.Decrypt(nonce, ciphertext, tag, plaintextBytes);</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-12">			string decrypt = Encoding.UTF8.GetString(plaintextBytes);</p> 
+                                        <br> 
+                                        <p class="text-sm mb-0 ms-12">			Console.WriteLine(decrypt);</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">		}</p> 
+                                        <p class="text-sm mb-0 ms-8"></p> 
+                                        <p class="text-sm mb-0 ms-6">	}</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">}</p> 
+                                      </code>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>		
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingTwoE">
+                    <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoE" aria-expanded="false" aria-controls="collapseTwoE">
+                      Java
+                      <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                    </button>
+                  </h5>
+                  <div id="collapseTwoE" class="accordion-collapse collapse" aria-labelledby="headingTwoE" data-bs-parent="#accordionRentalE">
+                    <div class="accordion-body text-sm opacity-8">
+                      <div class="card card-body bg-dark text-white">
+                        <div class="table-responsive">
+                          <table class="table align-items-center mb-0 text-white"">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div class="">
+                                      <code class="text-white">
+                                        <p class="text-sm mb-0">import java.security.Security;</p>
+                                        <p class="text-sm mb-0">import java.util.Base64;</p>
+                                        <br>
+                                        <p class="text-sm mb-0">import javax.crypto.Cipher;</p>
+                                        <p class="text-sm mb-0">import javax.crypto.spec.IvParameterSpec;</p>
+                                        <p class="text-sm mb-0">import javax.crypto.spec.SecretKeySpec;</p>
+                                        <br>
+                                        <p class="text-sm mb-0">import com.google.common.base.Charsets;</p>
+                                        <br>
+                                        <p class="text-sm mb-0">import org.apache.commons.lang3.ArrayUtils;</p>
+                                        <p class="text-sm mb-0">import org.bouncycastle.jce.provider.BouncyCastleProvider;</p>
+                                        <br>
+                                        <p class="text-sm mb-0">// For Java and JVM-based languages, you might need to install unrestricted policy file for JVM, </p>
+                                        <p class="text-sm mb-0">// which is provided by Sun. Please refer BouncyCastle FAQ if you get </p>
+                                        <p class="text-sm mb-0">// java.lang.SecurityException: Unsupported keysize or algorithm parameters or</p>
+                                        <p class="text-sm mb-0">// java.security.InvalidKeyException: Illegal key size.</p>
+                                        <br>
+                                        <p class="text-sm mb-0">// If you cannot install unrestricted policy file for JVM because of some reason, you can try with reflection: See here.</p>
+                                        <br>
+                                        <p class="text-sm mb-0">public class Test {</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-6">    public static void main(String[] args) {</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">        try {</p>
+                                        <p class="text-sm mb-0 ms-10">            Security.addProvider(new BouncyCastleProvider());</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Data from configuration</p>
+                                        <p class="text-sm mb-0 ms-10">            String keyFromConfiguration = "6fNDiYU0T0/evFpmfycNai/AqF24i+rT0OmuVw0/sGQ=";</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Data from server</p>
+                                        <p class="text-sm mb-0 ms-10">            String ivFromHttpHeader = "RYjpCMtUmK54T6Lk";</p>
+                                        <p class="text-sm mb-0 ms-10">            String authTagFromHttpHeader = "FUajWHmZjP4A5qaa1G0kxw==";</p>                                       
+                                        <p class="text-sm mb-0 ms-10">            String httpBody = "9bIjURJIcwoKvQr+ifOTH3HbMX+IqmsRqHuG/I1GfbSX89JE5DcWh/p8QROC5pRAuYZ7"</p> 
+                                        <p class="text-sm mb-0 ms-12">															+"ln7RSkHXJdZpVz1LFQ2859WsetvHHui7qYmfxATOO1j0AQuPdAD3FeRH0kR4s/v3c2nV8"</p> 
+                                        <p class="text-sm mb-0 ms-12">															+"1DnUXFCnQER/+VWrYdbu5vn8gm+diSE6CHvkK+ODy0ebVi5O6VBnWVjgBUG33VwWiAyIl"</p> 
+                                        <p class="text-sm mb-0 ms-12">															+"7Ik435V55WnZgynH3GfbVYoGwZ5UhYtn3yw2yruiLAKu6VTBvnh/ZJP21cHCJSF6NPSd+8"</p> 
+                                        <p class="text-sm mb-0 ms-12">															+"1gzWFU/+ECm3cf3uBbCkmKmL7HxRhRxhG0lMtX6ELZOXuw3eDJ1BTu+sSMkV/5Xk+5XX48"</p> 
+                                        <p class="text-sm mb-0 ms-12">															+"XmP6CGZ7KmP7Q3Fw1kZmhn0unFyv0Gw8PjT1Ohny/HMgNl16I=";</p>      
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Convert data to process</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] key = Base64.getDecoder().decode(keyFromConfiguration);</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] iv = Base64.getDecoder().decode(ivFromHttpHeader);</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] authTag = Base64.getDecoder().decode(authTagFromHttpHeader);</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] encryptedText = Base64.getDecoder().decode(httpBody);</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Unlike other programming language, We have to append auth tag at the end of</p>
+                                        <p class="text-sm mb-0 ms-10">            // encrypted text in Java</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] cipherText = ArrayUtils.addAll(encryptedText, authTag);</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Prepare decryption</p>
+                                        <p class="text-sm mb-0 ms-10">            SecretKeySpec keySpec = new SecretKeySpec(key, 0, 32, "AES");</p>
+                                        <p class="text-sm mb-0 ms-10">            Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");</p>
+                                        <p class="text-sm mb-0 ms-10">            cipher.init(Cipher.DECRYPT_MODE, keySpec, new IvParameterSpec(iv));</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-10">            // Decrypt</p>
+                                        <p class="text-sm mb-0 ms-10">            byte[] bytes = cipher.doFinal(cipherText);</p>
+                                        <p class="text-sm mb-0 ms-10">            System.out.println(new String(bytes, Charsets.UTF_8));</p>
+                                        <br>
+                                        <p class="text-sm mb-0 ms-8">        } catch (Exception e) {</p>
+                                        <p class="text-sm mb-0 ms-12">            e.printStackTrace();</p>
+                                        <p class="text-sm mb-0 ms-8">        }</p>
+                                        <p class="text-sm mb-0 ms-6">    }</p>
+                                        <br>
+                                        <p class="text-sm mb-0">}</p>
+                                      </code>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>		
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingThreeE">
+                    <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeE" aria-expanded="false" aria-controls="collapseThreeE">
+                      PHP
+                      <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                    </button>
+                  </h5>
+                  <div id="collapseThreeE" class="accordion-collapse collapse" aria-labelledby="headingTwoE" data-bs-parent="#accordionRentalE">
+                    <div class="accordion-body text-sm opacity-8">
+                      <div class="card card-body bg-dark text-white">
+                        <div class="table-responsive">
+                          <table class="table align-items-center mb-0 text-white"">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div class="">
+                                      <code class="text-white">
+                                        <p class="text-sm mb-0">function sodium_decrypt( $webhookSecret, $iv_from_http_header, $http_body , $auth_tag_from_http_header ){</p> 
+                                        <p class="text-sm mb-0 ms-6">	$key = mb_convert_encoding($webhookSecret, "UTF-8", "BASE64");</p> 
+                                        <p class="text-sm mb-0 ms-6">	$iv = mb_convert_encoding($iv_from_http_header, "UTF-8", "BASE64");</p> 
+                                        <p class="text-sm mb-0 ms-6">	$cipher_text = mb_convert_encoding($http_body, "UTF-8", "BASE64") . mb_convert_encoding($auth_tag_from_http_header, "UTF-8", "BASE64");</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-6">	$result = sodium_crypto_aead_aes256gcm_decrypt($cipher_text, "", $iv, $key);</p> 
+                                        <br> 
+                                        <p class="text-sm mb-0 ms-6">	return $result;</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">}</p> 
+                                        <br> 
+                                        <p class="text-sm mb-0">$webhookSecret = "6fNDiYU0T0/evFpmfycNai/AqF24i+rT0OmuVw0/sGQ=";</p> 
+                                        <p class="text-sm mb-0">$iv_from_http_header = "RYjpCMtUmK54T6Lk";</p> 
+                                        <p class="text-sm mb-0">$auth_tag_from_http_header = "FUajWHmZjP4A5qaa1G0kxw==";</p> 
+                                        <p class="text-sm mb-0">$http_body = "9bIjURJIcwoKvQr+ifOTH3HbMX+IqmsRqHuG/I1GfbSX89JE5DcWh/p8QROC5pRAuYZ7" .</p> 
+                                        <p class="text-sm mb-0 ms-6">					"ln7RSkHXJdZpVz1LFQ2859WsetvHHui7qYmfxATOO1j0AQuPdAD3FeRH0kR4s/v3c2nV8" .</p> 
+                                        <p class="text-sm mb-0 ms-6">					"1DnUXFCnQER/+VWrYdbu5vn8gm+diSE6CHvkK+ODy0ebVi5O6VBnWVjgBUG33VwWiAyIl" .</p> 
+                                        <p class="text-sm mb-0 ms-6">					"7Ik435V55WnZgynH3GfbVYoGwZ5UhYtn3yw2yruiLAKu6VTBvnh/ZJP21cHCJSF6NPSd+8" .</p> 
+                                        <p class="text-sm mb-0 ms-6">					"1gzWFU/+ECm3cf3uBbCkmKmL7HxRhRxhG0lMtX6ELZOXuw3eDJ1BTu+sSMkV/5Xk+5XX48" .</p> 
+                                        <p class="text-sm mb-0 ms-6">					"XmP6CGZ7KmP7Q3Fw1kZmhn0unFyv0Gw8PjT1Ohny/HMgNl16I=";</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">// Decrypt message</p> 
+                                        <p class="text-sm mb-0">$result = sodium_decrypt($webhookSecret, $iv_from_http_header, $http_body , $auth_tag_from_http_header);</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">print($result);</p> 
+                                      </code>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>		
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingFourE">
+                    <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourE" aria-expanded="false" aria-controls="collapseFourE">
+                      Python
+                      <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                    </button>
+                  </h5>
+                  <div id="collapseFourE" class="accordion-collapse collapse" aria-labelledby="headingTwoE" data-bs-parent="#accordionRentalE">
+                    <div class="accordion-body text-sm opacity-8">
+                      <div class="card card-body bg-dark text-white">
+                        <div class="table-responsive">
+                          <table class="table align-items-center mb-0 text-white"">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="d-flex px-2 py-1">
+                                    <div class="">
+                                      <code class="text-white">
+                                        <p class="text-sm mb-0">import base64</p> 
+                                        <p class="text-sm mb-0">from Cryptodome.Cipher import AES</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">def decrypt_AES_GCM(encryptedMsg, authTag, secretKey, iv):</p> 
+                                        <p class="text-sm mb-0 ms-4">    iv = base64.b64decode(iv)</p> 
+                                        <p class="text-sm mb-0 ms-4">    encryptedMsg = base64.b64decode(encryptedMsg)</p> 
+                                        <p class="text-sm mb-0 ms-4">    secretKey = base64.b64decode(secretKey)</p> 
+                                        <p class="text-sm mb-0 ms-4">    authTag = base64.b64decode(authTag)</p> 
+                                        <p class="text-sm mb-0 ms-4">    aesCipher = AES.new(secretKey, AES.MODE_GCM, iv)</p> 
+                                        <p class="text-sm mb-0 ms-4">    plaintext = aesCipher.decrypt_and_verify(encryptedMsg, authTag)</p> 
+                                        <p class="text-sm mb-0 ms-4">    return plaintext</p> 
+                                        <br>
+                                        <p class="text-sm mb-0 ms-4">example = {</p> 
+                                        <p class="text-sm mb-0 ms-8">    "encoded" : "9bIjURJIcwoKvQr+ifOTH3HbMX+IqmsRqHuG/I1GfbSX89JE5DcWh/p8QROC5pRAuYZ7" \</p> 
+                                        <p class="text-sm mb-0 ms-12">				"ln7RSkHXJdZpVz1LFQ2859WsetvHHui7qYmfxATOO1j0AQuPdAD3FeRH0kR4s/v3c2nV8" \</p> 
+                                        <p class="text-sm mb-0 ms-12">				"1DnUXFCnQER/+VWrYdbu5vn8gm+diSE6CHvkK+ODy0ebVi5O6VBnWVjgBUG33VwWiAyIl" \</p> 
+                                        <p class="text-sm mb-0 ms-12">				"7Ik435V55WnZgynH3GfbVYoGwZ5UhYtn3yw2yruiLAKu6VTBvnh/ZJP21cHCJSF6NPSd+8" \</p> 
+                                        <p class="text-sm mb-0 ms-12">				"1gzWFU/+ECm3cf3uBbCkmKmL7HxRhRxhG0lMtX6ELZOXuw3eDJ1BTu+sSMkV/5Xk+5XX48"</p> 
+                                        <p class="text-sm mb-0 ms-12">				"XmP6CGZ7KmP7Q3Fw1kZmhn0unFyv0Gw8PjT1Ohny/HMgNl16I=",</p> 
+                                        <p class="text-sm mb-0 ms-8">    "iv" : "RYjpCMtUmK54T6Lk",</p> 
+                                        <p class="text-sm mb-0 ms-8">    "tag" : "FUajWHmZjP4A5qaa1G0kxw==",</p> 
+                                        <p class="text-sm mb-0 ms-8">    "secret" : "6fNDiYU0T0/evFpmfycNai/AqF24i+rT0OmuVw0/sGQ="</p> 
+                                        <p class="text-sm mb-0 ms-4">}</p> 
+                                        <br>
+                                        <p class="text-sm mb-0">result = decrypt_AES_GCM(example['encoded'], example['tag'], example['secret'], example['iv'])</p> 
+                                        <p class="text-sm mb-0">print(result)</p> 
+                                      </code>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>		
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- DOCUMENTATION API REFERENCE -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="apiReference">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">API Reference</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+
+            <p></p>
+            <p>For more info check <a href="https://developer.sibsapimarket.com/sandbox/node/3085" target="_blank" rel="noopener noreferrer" class="text-info">SIBS API Market </a></p>
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- DOCUMENTATION Configurations -->
+    <div class="row mx-1">
+
+      <div class="container-fluid py-4" id="credentials">
+        <div class="card shadow-lg mb-5">
+          <div class="card-header bg-gradient-info p-5 position-relative">
+            <h2 class="text-white">Credentials</h2>
+            <!--<p class="text-white opacity-8 mb-4">Last modified: Jan 1 2000</p> -->
+            <div class="position-absolute w-100 z-index-1 bottom-0 ms-n5">
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto" style="height:7vh;min-height:50px;">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
+                  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
+                  <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
+                  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1)" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body p-5">
+
+            <!-- -------- BEGINING CONFIGURATIONS -------- -->
+            <section class="pt-2 pb-6" id="credentials">
+              <div class="container">
+
+                <div class="mt-3">
+                  <br>
+                  <h4>How to get your credentials ?</h4>
+                  <br>
+                  <p>Below you will be able to configure which credentials you will use on the Examples above.</p>
+                  <p>You can use the default one or change them to your Test Credentials, provided by onboarding@sibs.pt</p>
+                  <br>
+                </div>
+                
+                <div class="accordion" id="accordionRental">
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="headingOneX">
+                      <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneX" aria-expanded="false" aria-controls="collapseOneX">
+                        For Test Environment
+                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      </button>
+                    </h5>
+                    <div id="collapseOneX" class="accordion-collapse collapse" aria-labelledby="headingOneX" data-bs-parent="#accordionRental">
+                      <div class="accordion-body text-sm opacity-8">
+                        <div class="card card-body">
+                          <div class="table-responsive">
+                            <table class="table align-items-center mb-0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        TerminalId 
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Provided by Onboarding on your credential kit</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        X-IBM-Client-Id
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Provided by Onboarding on your credential kit</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Bearer / Access Token
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Provided by Onboarding on your credential kit</p>
+                                  </td>
+                                </tr>
+                                <!-- Base URL
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Base Url
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0"> For test enviroment is: <span class="baseUrl"> </span></p>
+                                  </td>
+                                </tr> -->
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment type
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">For one time transactions - AUTH</p>
+                                    <p class="text-xs font-weight-bold mb-0">For two time transactions - PURS</p
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment Entity
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Provided by Onboarding on your credential kit</p>
+                                  </td>
+                                </tr>
+                                <!-- Expiration date
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Expiration date Ref. MB
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0"> ------------------------------ </p>
+                                  </td>
+                                </tr> -->
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment Method
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Selected when you sign the contract with the Bank</p>
+                                  </td>
+                                </tr>		
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="headingTwoX">
+                      <button class="accordion-button p-2 border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoX" aria-expanded="false" aria-controls="collapseTwoX">
+                        For Production Environment
+                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
+                      </button>
+                    </h5>
+                    <div id="collapseTwoX" class="accordion-collapse collapse" aria-labelledby="headingTwoX" data-bs-parent="#accordionRental">
+                      <div class="accordion-body text-sm opacity-8">
+                        <div class="card card-body">
+                          <div class="table-responsive">
+                            <table class="table align-items-center mb-0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        TerminalId 
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Obtained on SIBS BackOffice, or provided by your bank</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        X-IBM-Client-Id
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Obtained on SIBS BackOffice, or provided Onboarding</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Bearer / Access Token
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Obtained on SIBS BackOffice</p>
+                                  </td>
+                                </tr>
+                                <!-- Base Url
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Base Url
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0"> For test enviroment is: <span class="baseUrl"> </span></p>
+                                  </td>
+                                </tr> -->
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment type
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">For one time transactions - AUTH</p>
+                                    <p class="text-xs font-weight-bold mb-0">For two time transactions - PURS</p
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment Entity
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Obtained on SIBS BackOffice, or provided by your bank</p>
+                                  </td>
+                                </tr>
+                                <!-- Expiration date
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Expiration date Ref. MB
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0"> ------------------------------ </p>
+                                  </td>
+                                </tr> -->
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2 py-1">
+                                      <div>
+                                        Payment Method
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="text-xs font-weight-bold mb-0">Selected when you sign the contract with the Bank</p>
+                                  </td>
+                                </tr>		
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </section>
+            <!-- -------- END CONFIGUATIONS -------- -->
+
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- DOCUMENTATION FOOTER / CREDITS -->
+    <div class="row mx-1">
+      <!-- -------- FOOTER -------- -->
+      <footer class="footer bg-gray-100">
+        <div class="container">
+          <div class=" row">
+            <div class="mb-5 align-items-center justify-content-center">
+              <div class="col-auto">
+                <div class="text-center">
+                  <!--<p class="my-4 text-sm fw-bold">
+                    Copyright Onboarding © <script>
+                      document.write(new Date().getFullYear())
+                    </script> 
+                  </p>-->
+                </div>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+  </div>
+
+
+  </main>
+  <!-- END Main DOCs -->
+  
+
+  <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="card card-plain">
+            <div class="card-header pb-0 text-left">
+              <h3 class="font-weight-bolder text-info text-gradient">Welcome back</h3>
+              <p class="mb-0">Enter your email and password to sign in</p>
+            </div>
+            <div class="card-body ">
+              <form class="" role="form text-left">
+                <label>Email</label>
+                <div class="input-group mb-3 w-100 d-flex align-items-center justify-content-center">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email-addon">
+                </div>
+                <label>Password</label>
+                <div class="input-group mb-3 w-100 d-flex align-items-center justify-content-center ">
+                  <input type="email" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon">
+                </div>
+                <div class="form-check form-switch mt-4">
+                  <input class="form-check-input" type="checkbox" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-3 mb-0">Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="card-footer text-center pt-0 px-lg-2 px-1">
+              <p class="mb-4 text-sm mx-auto">
+                Not a premium partner?
+                <a class="text-info text-gradient font-weight-bold" href="mailto:onboarding@sibs.pt?cc=paulo.lopes@sibs.pt&subject=New%20SIBS%20Premium%20Partner&body=Hi,%0Awe%20wish%20to%20became%20SIBS%20Premium%20Parteners" type="button">Mail Us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--</div>-->
+
+  <!--   Core JS Files   -->
+  <script src="js/core/popper.min.js" type="text/javascript"></script>
+  <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/plugins/perfect-scrollbar.min.js"></script> 
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="js/plugins/chartjs.min.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="js/plugins/countup.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="js/plugins/parallax.min.js"></script>
+  <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>  -->
+  <script src="js/soft-design-system.min.js?v=1.0.5" type="text/javascript"></script>
+
+  <script src="js/sibs.js" type="text/javascript"></script>
+
+  <script>
+
+    if (document.getElementById('typed')) {
+      var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 90,
+        backSpeed: 90,
+        backDelay: 200,
+        startDelay: 500,
+        loop: true
+      });
+    }
+  </script>
+
+  
+  <script>  
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+
+  <script type="text/javascript">
+    /*document.getElementById("main").addEventListener("scroll", myFunction);
+
+    ele = document.getElementById("main");
+    console.log(ele.getElementsByTagName("DIV")  );
+    console.log(ele  );
+
+    function myFunction() {
+      ele = document.getElementById("main");
+      aux = ele.getElementsByTagName("DIV");
+      aux.forEach(element => {
+        console.log(element);
+        let top = ele.scrollY;
+        let offset = element.offsetTop - 150;
+        let height = element.offsetHeight;
+        //let id = element.getAttribute("id");
+
+        console.log("top - "+ top  );
+        console.log("offset - "+ offset  );
+        console.log("height - "+ offsetHeight  );
+        //console.log("id - "+ id  );
+      });
+      console.log("Scrolling....");
+    }*/
+  </script>
+
+
+</body>
+
+</html>
